@@ -18,6 +18,7 @@ public class MazeGame {
 	}
 
 	public String createMaze() {
+		
 		EnchantedMazeFactory Encantado = new EnchantedMazeFactory();
 		MazeFactory Comum = new MazeFactory();
 		

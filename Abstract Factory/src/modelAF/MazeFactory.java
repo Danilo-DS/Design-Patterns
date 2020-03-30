@@ -1,6 +1,6 @@
 package modelAF;
 
-public class MazeFactory extends AbstractMazeFactory {
+public class MazeFactory extends AbstractMazeFactory{
 	
 	@Override
 	public String makeMaze() {
@@ -26,4 +26,5 @@ public class MazeFactory extends AbstractMazeFactory {
 	public Room getInstace() {
 		return new Room();
 	}
+
 }
