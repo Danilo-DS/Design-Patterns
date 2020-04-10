@@ -6,6 +6,9 @@ public class EnchantedRoom extends AbstractRoom {
 	public EnchantedRoom(AbstractMazeFactory MontaCenario) {
 		this.montaCenario = MontaCenario;
 	}
+
+	public EnchantedRoom(){}
+
 	public void montando() {
 		montaCenario.makeMaze();
 		montaCenario.makeWall();

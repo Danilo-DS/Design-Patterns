@@ -5,6 +5,9 @@ public class Room extends AbstractRoom {
 	public Room(AbstractMazeFactory MontaCenario) {
 		this.montaCenario = MontaCenario;
 	}
+
+	public Room () {}
+
 	public void montando(){
 		montaCenario.makeMaze();
 		montaCenario.makeWall();
