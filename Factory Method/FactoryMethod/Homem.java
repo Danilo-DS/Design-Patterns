@@ -3,7 +3,7 @@ package FactoryMethod;
 public class Homem extends Genero{
 	public String nome;
 	
-	public Homem(String tipo, String nome) {
+	public Homem(String tipo) {
 		super(tipo);
 	}
 	
@@ -18,6 +18,6 @@ public class Homem extends Genero{
 
 
 	public String Saudacao() {
-		return "Sr: "+this.nome;
+		return getTipo() + " Sr: "+this.getNome();
 	}
 }

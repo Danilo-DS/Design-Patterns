@@ -16,6 +16,6 @@ public class Mulher extends Genero{
 	}
 
 	public String Saudacao() {
-		return "Sra: " + this.nome;
+		return getTipo() + " Sra: " + this.nome;
 	}
 }

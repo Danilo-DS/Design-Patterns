@@ -1,0 +1,28 @@
+package prototype;
+
+public abstract class Shape {
+	protected String id;
+	protected String type;
+	
+	public Shape() {}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	abstract Shape Clonar();
+	
+	abstract String Show(); 
+}
