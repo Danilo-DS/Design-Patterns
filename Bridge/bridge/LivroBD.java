@@ -1,27 +1,23 @@
 package bridge;
 
-public class LivroBD extends Livro implements Publicacao{
+public class LivroBD extends Livro{
 	
-	private int id; 
-	
-	public LivroBD(int id) {
-		this.id = id;
-	}
-	
-	public LivroBD() {}
+	public LivroBD() {	}
 	
 	@Override
 	public String getTitulo() {
-		return "Livro Banco de Dados";
+		return "Titulo: LivroTeste.db";
 	}
 
 	@Override
-	public int getAutor(int id) {
-		return id;
+	public String getID(int id) {
+		// TODO Auto-generated method stub
+		return "ID: " + id;
 	}
 
 	@Override
 	public String getISBN() {
-		return ("Id_Autor: "+ getAutor(id) +" Tipo de Livro: "+ getTitulo());
+		// TODO Auto-generated method stub
+		return "846468468416454";
 	}
 }

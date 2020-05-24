@@ -1,26 +1,25 @@
 package bridge;
 
-public class LivroXML extends Livro implements Publicacao{
-	private int id;
-
-	public LivroXML(int id) {
-		this.id = id;
-	}
+public class LivroXML extends Livro{
 	
+
 	public LivroXML() {	}
 	
 	@Override
 	public String getTitulo() {
-		return "Livro XML";
+		return "Titulo: LivroTeste.xml";
 	}
 
 	@Override
-	public int getAutor(int id) {
-		return id;
+	public String getID(int id) {
+		// TODO Auto-generated method stub
+		return "ID: " + id;
 	}
 
 	@Override
 	public String getISBN() {
-		return ("Id_Autor: "+ getAutor(id) +" Tipo de Livro: "+ getTitulo());
+		// TODO Auto-generated method stub
+		return "ISBN: 84354234869889";
 	}
+
 }

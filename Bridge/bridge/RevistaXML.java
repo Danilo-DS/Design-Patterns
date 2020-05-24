@@ -1,27 +1,26 @@
 package bridge;
 
-public class RevistaXML extends Revista implements Publicacao{
-	
-	private int id;
-	
-	public RevistaXML(int id) {
-		this.id = id;
-	}
+
+
+public class RevistaXML extends Revista{
 	
 	public RevistaXML() {}
 	
 	@Override
 	public String getTitulo() {
-		return "Revista XML";
+		// TODO Auto-generated method stub
+		return "Titulo: Revista Teste.xml";
 	}
 
 	@Override
-	public int getAutor(int id) {
-		return id;
+	public String getID(int id) {
+		// TODO Auto-generated method stub
+		return "ID: " + id;
 	}
 
 	@Override
 	public String getArtigo() {
-		return ("Id_Autor: "+ getAutor(id) + " Tipo de Livro: " + getTitulo());
+		// TODO Auto-generated method stub
+		return "Finge que tem um Artigo\n'~~~~~'";
 	}
 }
